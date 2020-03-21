@@ -1,0 +1,217 @@
+{
+  "start-time" : "2020-03-21T03:48:25.328",
+  "akka-version" : "2.6.3",
+  "akka-diagnostics-version" : "1.1.12",
+  "classpath" : "/home/synerzip/softwares/jdk1.8.0_191/jre/lib/charsets.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/deploy.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/ext/cldrdata.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/ext/dnsns.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/ext/jaccess.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/ext/jfxrt.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/ext/localedata.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/ext/nashorn.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/ext/sunec.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/ext/sunjce_provider.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/ext/sunpkcs11.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/ext/zipfs.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/javaws.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/jce.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/jfr.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/jfxswt.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/jsse.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/management-agent.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/plugin.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/resources.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/rt.jar:/home/synerzip/codebase/lightbend/LAS-P-lightbend-akka-for-scala-professional-v1/exercises/target/scala-2.13/classes/:/home/synerzip/codebase/lightbend/LAS-P-lightbend-akka-for-scala-professional-v1/common/target/scala-2.13/classes/:/home/synerzip/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.2.3.jar:/home/synerzip/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.2.3.jar:/home/synerzip/.ivy2/cache/com.lightbend.akka/akka-diagnostics_2.13/jars/akka-diagnostics_2.13-1.1.12.jar:/home/synerzip/.ivy2/cache/com.lightbend.cinnamon/cinnamon-akka_2.13/jars/cinnamon-akka_2.13-2.13.1.jar:/home/synerzip/.ivy2/cache/com.lightbend.cinnamon/cinnamon-common/jars/cinnamon-common-2.13.1.jar:/home/synerzip/.ivy2/cache/com.lightbend.cinnamon/cinnamon-core-java/jars/cinnamon-core-java-2.13.1.jar:/home/synerzip/.ivy2/cache/com.lightbend.cinnamon/cinnamon-core_2.13/jars/cinnamon-core_2.13-2.13.1.jar:/home/synerzip/.ivy2/cache/com.lightbend.cinnamon/cinnamon-java/jars/cinnamon-java-2.13.1.jar:/home/synerzip/.ivy2/cache/com.lightbend.cinnamon/cinnamon-jvm-metrics-producer/jars/cinnamon-jvm-metrics-producer-2.13.1.jar:/home/synerzip/.ivy2/cache/com.lightbend.cinnamon/cinnamon-prometheus/jars/cinnamon-prometheus-2.13.1.jar:/home/synerzip/.ivy2/cache/com.lightbend.cinnamon/cinnamon-prometheus-httpserver/jars/cinnamon-prometheus-httpserver-2.13.1.jar:/home/synerzip/.ivy2/cache/com.lightbend.cinnamon/cinnamon-scala_2.13/jars/cinnamon-scala_2.13-2.13.1.jar:/home/synerzip/.ivy2/cache/com.typesafe/config/bundles/config-1.4.0.jar:/home/synerzip/.ivy2/cache/com.typesafe.akka/akka-actor_2.13/jars/akka-actor_2.13-2.6.3.jar:/home/synerzip/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.13/jars/akka-slf4j_2.13-2.6.3.jar:/home/synerzip/.ivy2/cache/io.prometheus/simpleclient/bundles/simpleclient-0.8.0.jar:/home/synerzip/.ivy2/cache/io.prometheus/simpleclient_common/bundles/simpleclient_common-0.8.0.jar:/home/synerzip/.ivy2/cache/io.prometheus/simpleclient_httpserver/bundles/simpleclient_httpserver-0.8.0.jar:/home/synerzip/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.5.jar:/home/synerzip/.ivy2/cache/org.hdrhistogram/HdrHistogram/bundles/HdrHistogram-2.1.12.jar:/home/synerzip/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.13.1.jar:/home/synerzip/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.13/jars/scala-java8-compat_2.13-0.9.0.jar:/home/synerzip/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.13/bundles/scala-parser-combinators_2.13-1.1.2.jar:/home/synerzip/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.30.jar:/home/synerzip/softwares/idea-IC-182.5107.16/lib/idea_rt.jar",
+  "configuration-warnings" : [],
+  "system-metrics" : {
+    "heap-init" : 257949696,
+    "heap-max" : 3663200256,
+    "heap-used" : 12713584,
+    "heap-committed" : 147849216,
+    "os-processors" : 4,
+    "mem-pool-0" : {
+      "name" : "Code Cache",
+      "type" : "Non-heap memory",
+      "init" : 2555904,
+      "max" : 251658240,
+      "used" : 5740224,
+      "committed" : 5767168
+    },
+    "mem-pool-1" : {
+      "name" : "Metaspace",
+      "type" : "Non-heap memory",
+      "init" : 0,
+      "max" : -1,
+      "used" : 20945360,
+      "committed" : 21938176
+    },
+    "mem-pool-2" : {
+      "name" : "Compressed Class Space",
+      "type" : "Non-heap memory",
+      "init" : 0,
+      "max" : 1073741824,
+      "used" : 2634784,
+      "committed" : 2883584
+    },
+    "mem-pool-3" : {
+      "name" : "PS Eden Space",
+      "type" : "Heap memory",
+      "init" : 65011712,
+      "max" : 1352663040,
+      "used" : 5613144,
+      "committed" : 65011712
+    },
+    "mem-pool-4" : {
+      "name" : "PS Survivor Space",
+      "type" : "Heap memory",
+      "init" : 10485760,
+      "max" : 10485760,
+      "used" : 0,
+      "committed" : 10485760
+    },
+    "mem-pool-5" : {
+      "name" : "PS Old Gen",
+      "type" : "Heap memory",
+      "init" : 171966464,
+      "max" : 2747269120,
+      "used" : 7100440,
+      "committed" : 72351744
+    }
+  },
+  "configuration" : {
+    "akka" : {
+        "version" : "2.6.3"
+    },
+    "awt" : {
+        "toolkit" : "sun.awt.X11.XToolkit"
+    },
+    "cinnamon" : {
+        "akka" : {
+            "actors" : {
+                "/user/*" : {
+                    "report-by" : "class"
+                }
+            },
+            "dispatchers" : {
+                "basic-information" : {
+                    "names" : [
+                        "*"
+                    ]
+                },
+                "time-information" : {
+                    "names" : [
+                        "*"
+                    ]
+                }
+            }
+        },
+        "prometheus" : {
+            "exporters" : [
+                "http-server"
+            ],
+            "http-server" : {
+                "host" : "0.0.0.0",
+                "port" : 9001
+            }
+        }
+    },
+    "excluded-sensitive-paths" : [
+        "user.home",
+        "user.dir",
+        "user.name"
+    ],
+    "file" : {
+        "encoding" : {
+            "pkg" : "sun.io"
+        },
+        "separator" : "/"
+    },
+    "java" : {
+        "awt" : {
+            "graphicsenv" : "sun.awt.X11GraphicsEnvironment",
+            "printerjob" : "sun.print.PSPrinterJob"
+        },
+        "class" : {
+            "path" : "/home/synerzip/softwares/jdk1.8.0_191/jre/lib/charsets.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/deploy.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/ext/cldrdata.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/ext/dnsns.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/ext/jaccess.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/ext/jfxrt.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/ext/localedata.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/ext/nashorn.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/ext/sunec.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/ext/sunjce_provider.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/ext/sunpkcs11.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/ext/zipfs.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/javaws.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/jce.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/jfr.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/jfxswt.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/jsse.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/management-agent.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/plugin.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/resources.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/rt.jar:/home/synerzip/codebase/lightbend/LAS-P-lightbend-akka-for-scala-professional-v1/exercises/target/scala-2.13/classes:/home/synerzip/codebase/lightbend/LAS-P-lightbend-akka-for-scala-professional-v1/common/target/scala-2.13/classes:/home/synerzip/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.2.3.jar:/home/synerzip/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.2.3.jar:/home/synerzip/.ivy2/cache/com.lightbend.akka/akka-diagnostics_2.13/jars/akka-diagnostics_2.13-1.1.12.jar:/home/synerzip/.ivy2/cache/com.lightbend.cinnamon/cinnamon-akka_2.13/jars/cinnamon-akka_2.13-2.13.1.jar:/home/synerzip/.ivy2/cache/com.lightbend.cinnamon/cinnamon-common/jars/cinnamon-common-2.13.1.jar:/home/synerzip/.ivy2/cache/com.lightbend.cinnamon/cinnamon-core-java/jars/cinnamon-core-java-2.13.1.jar:/home/synerzip/.ivy2/cache/com.lightbend.cinnamon/cinnamon-core_2.13/jars/cinnamon-core_2.13-2.13.1.jar:/home/synerzip/.ivy2/cache/com.lightbend.cinnamon/cinnamon-java/jars/cinnamon-java-2.13.1.jar:/home/synerzip/.ivy2/cache/com.lightbend.cinnamon/cinnamon-jvm-metrics-producer/jars/cinnamon-jvm-metrics-producer-2.13.1.jar:/home/synerzip/.ivy2/cache/com.lightbend.cinnamon/cinnamon-prometheus/jars/cinnamon-prometheus-2.13.1.jar:/home/synerzip/.ivy2/cache/com.lightbend.cinnamon/cinnamon-prometheus-httpserver/jars/cinnamon-prometheus-httpserver-2.13.1.jar:/home/synerzip/.ivy2/cache/com.lightbend.cinnamon/cinnamon-scala_2.13/jars/cinnamon-scala_2.13-2.13.1.jar:/home/synerzip/.ivy2/cache/com.typesafe/config/bundles/config-1.4.0.jar:/home/synerzip/.ivy2/cache/com.typesafe.akka/akka-actor_2.13/jars/akka-actor_2.13-2.6.3.jar:/home/synerzip/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.13/jars/akka-slf4j_2.13-2.6.3.jar:/home/synerzip/.ivy2/cache/io.prometheus/simpleclient/bundles/simpleclient-0.8.0.jar:/home/synerzip/.ivy2/cache/io.prometheus/simpleclient_common/bundles/simpleclient_common-0.8.0.jar:/home/synerzip/.ivy2/cache/io.prometheus/simpleclient_httpserver/bundles/simpleclient_httpserver-0.8.0.jar:/home/synerzip/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.5.jar:/home/synerzip/.ivy2/cache/org.hdrhistogram/HdrHistogram/bundles/HdrHistogram-2.1.12.jar:/home/synerzip/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.13.1.jar:/home/synerzip/.ivy2/cache/org.scala-lang.modules/scala-java8-compat_2.13/jars/scala-java8-compat_2.13-0.9.0.jar:/home/synerzip/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.13/bundles/scala-parser-combinators_2.13-1.1.2.jar:/home/synerzip/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.30.jar:/home/synerzip/softwares/idea-IC-182.5107.16/lib/idea_rt.jar",
+            "version" : "52.0"
+        },
+        "endorsed" : {
+            "dirs" : "/home/synerzip/softwares/jdk1.8.0_191/jre/lib/endorsed"
+        },
+        "ext" : {
+            "dirs" : "/home/synerzip/softwares/jdk1.8.0_191/jre/lib/ext:/usr/java/packages/lib/ext"
+        },
+        "home" : "/home/synerzip/softwares/jdk1.8.0_191/jre",
+        "io" : {
+            "tmpdir" : "/tmp"
+        },
+        "library" : {
+            "path" : "/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"
+        },
+        "runtime" : {
+            "name" : "Java(TM) SE Runtime Environment",
+            "version" : "1.8.0_191-b12"
+        },
+        "specification" : {
+            "name" : "Java Platform API Specification",
+            "vendor" : "Oracle Corporation",
+            "version" : "1.8"
+        },
+        "vendor" : {
+            "url" : {
+                "bug" : "http://bugreport.sun.com/bugreport/"
+            }
+        },
+        "version" : "1.8.0_191",
+        "vm" : {
+            "info" : "mixed mode",
+            "name" : "Java HotSpot(TM) 64-Bit Server VM",
+            "specification" : {
+                "name" : "Java Virtual Machine Specification",
+                "vendor" : "Oracle Corporation",
+                "version" : "1.8"
+            },
+            "vendor" : "Oracle Corporation",
+            "version" : "25.191-b12"
+        }
+    },
+    "line" : {
+        "separator" : "\n"
+    },
+    "os" : {
+        "arch" : "amd64",
+        "name" : "Linux",
+        "version" : "4.15.0-88-generic"
+    },
+    "path" : {
+        "separator" : ":"
+    },
+    "sun" : {
+        "arch" : {
+            "data" : {
+                "model" : "64"
+            }
+        },
+        "boot" : {
+            "class" : {
+                "path" : "/home/synerzip/softwares/jdk1.8.0_191/jre/lib/resources.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/rt.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/sunrsasign.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/jsse.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/jce.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/charsets.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/jfr.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/classes"
+            },
+            "library" : {
+                "path" : "/home/synerzip/softwares/jdk1.8.0_191/jre/lib/amd64"
+            }
+        },
+        "cpu" : {
+            "endian" : "little",
+            "isalist" : ""
+        },
+        "desktop" : "gnome",
+        "io" : {
+            "unicode" : {
+                "encoding" : "UnicodeLittle"
+            }
+        },
+        "java" : {
+            "command" : "com.lightbend.training.coffeehouse.CoffeeHouseApp",
+            "launcher" : "SUN_STANDARD"
+        },
+        "jnu" : {
+            "encoding" : "UTF-8"
+        },
+        "management" : {
+            "compiler" : "HotSpot 64-Bit Tiered Compilers"
+        },
+        "os" : {
+            "patch" : {
+                "level" : "unknown"
+            }
+        }
+    },
+    "user" : {
+        "country" : "IN",
+        "language" : "en",
+        "timezone" : ""
+    }
+}
+}
+
