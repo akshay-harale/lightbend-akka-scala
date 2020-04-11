@@ -23,6 +23,7 @@ object Barista {
 class Barista(prepareCoffeeDuration: FiniteDuration) extends Actor with ActorLogging {
   def receive: Receive = {
     case PrepareCoffee(coffee, guest) =>
+      log.info("preparing coffee in barista actor")
       busy(prepareCoffeeDuration)
       sender() ! CoffeePrepared(coffee, guest)
   }

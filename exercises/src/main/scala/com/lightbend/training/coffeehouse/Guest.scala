@@ -42,6 +42,12 @@ class Guest(
       orderCoffee()
   }
 
+
+  override def postStop(): Unit = {
+    log.info("Goof bye")
+    super.postStop()
+  }
+
   private def orderCoffee() = {
     waiter ! Waiter.ServeCoffee(favoriteCoffee)
   }
