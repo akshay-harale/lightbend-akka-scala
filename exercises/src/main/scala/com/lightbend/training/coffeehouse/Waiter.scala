@@ -1,6 +1,6 @@
 package com.lightbend.training.coffeehouse
 
-import akka.actor.{Actor, ActorLogging, Props}
+import akka.actor.{Actor, ActorLogging, ActorRef, Props}
 
 /**
   * Created by akshay on 22/3/20
@@ -11,16 +11,21 @@ import akka.actor.{Actor, ActorLogging, Props}
 
 object Waiter {
 
-  case class ServeCoffee(coffee:Coffee)
+  case class ServeCoffee(coffee: Coffee)
+
   case class CoffeeServed(coffee: Coffee)
 
-  def props() : Props = Props(new Waiter)
+  def props(barista: ActorRef): Props = Props(new Waiter(barista))
 }
 
-class Waiter extends Actor with ActorLogging {
+class Waiter(barista: ActorRef) extends Actor with ActorLogging {
+
   import Waiter._
 
   def receive: Receive = {
-    case ServeCoffee(coffee) => sender() ! CoffeeServed(coffee)
+    case ServeCoffee(coffee) =>
+      barista ! Barista.PrepareCoffee(coffee, sender())
+    case Barista.CoffeePrepared(coffee, guest) =>
+      guest ! CoffeeServed(coffee)
   }
 }
