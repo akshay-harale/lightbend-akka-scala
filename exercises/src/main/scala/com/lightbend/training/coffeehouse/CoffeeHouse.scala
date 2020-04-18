@@ -2,7 +2,7 @@ package com.lightbend.training.coffeehouse
 
 import java.util.concurrent.TimeUnit
 
-import akka.actor.{Actor, ActorLogging, ActorRef, Props, Terminated}
+import akka.actor.{Actor, ActorLogging, ActorRef, OneForOneStrategy, Props, SupervisorStrategy, Terminated}
 
 import scala.concurrent.duration._
 
@@ -28,6 +28,14 @@ object CoffeeHouse {
 class CoffeeHouse(caffeineLimit: Int) extends Actor with ActorLogging {
 
   import CoffeeHouse._
+
+
+  override def supervisorStrategy: SupervisorStrategy = {
+    val decider : SupervisorStrategy.Decider = {
+      case Guest.CaffeineException => SupervisorStrategy.Stop
+    }
+    OneForOneStrategy()(decider.orElse(super.supervisorStrategy.decider))
+  }
 
   private var guestBook: Map[ActorRef, Int] = Map.empty.withDefaultValue(0)
 
