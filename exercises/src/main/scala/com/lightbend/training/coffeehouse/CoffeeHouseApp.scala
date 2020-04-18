@@ -72,7 +72,7 @@ class CoffeeHouseApp(system: ActorSystem) extends Terminal {
 
   protected def createGuest(count: Int, coffee: Coffee, caffeineLimit: Int): Unit = {
     (1 to count).foreach(_ => {
-      coffeeHouse ! CoffeeHouse.CreateGuest(coffee)
+      coffeeHouse ! CoffeeHouse.CreateGuest(coffee,caffeineLimit)
     })
   }
 
