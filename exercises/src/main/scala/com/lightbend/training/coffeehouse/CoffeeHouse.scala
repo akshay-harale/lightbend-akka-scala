@@ -45,19 +45,25 @@ class CoffeeHouse(caffeineLimit: Int) extends Actor with ActorLogging {
   private val prepareCoffeeDuration: FiniteDuration =
     context.system.settings.config.getDuration("coffee-house.barista.prepare-coffee-duration", TimeUnit.MILLISECONDS).millis
 
+  private val baristaAccuracy = context.system.settings.config.getInt("coffee-house.barista.accuracy")
+
+  private val waiterMaxComplaintCount = context.system.settings.config.getInt("coffee-house.waiter.max-complaint-count")
+
   private val barista = createBarista()
   private val waiter = createWaiter()
 
   protected def createBarista() = {
-    context.actorOf(Barista.props(prepareCoffeeDuration), "barista")
+    context.actorOf(Barista.props(prepareCoffeeDuration,baristaAccuracy), "barista")
   }
 
 
   protected def createGuest(favoriteCoffee: Coffee, guestCaffeineLimit: Int): ActorRef =
     context.actorOf(Guest.props(waiter, favoriteCoffee, finishCoffeeDuration, guestCaffeineLimit))
 
-  protected def createWaiter(): ActorRef =
-    context.actorOf(Waiter.props(self), "waiter")
+  protected def createWaiter(): ActorRef = {
+    log.info(s"setting max compaint count $waiterMaxComplaintCount")
+    context.actorOf(Waiter.props(self,barista,waiterMaxComplaintCount), "waiter")
+  }
 
 
   log.debug("CoffeeHouse Open")

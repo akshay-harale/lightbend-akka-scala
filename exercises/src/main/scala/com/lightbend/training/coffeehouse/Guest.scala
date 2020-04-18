@@ -34,12 +34,16 @@ class Guest(
   orderCoffee()
 
   def receive: Receive = {
-    case Waiter.CoffeeServed(coffee) =>
+    case Waiter.CoffeeServed(`favoriteCoffee`) =>
       coffeeCount += 1
 
-      log.info(s"Enjoying my $coffeeCount yummy $coffee $finishCoffeeDuration")
+      log.info(s"Enjoying my $coffeeCount yummy $favoriteCoffee $finishCoffeeDuration")
 
       timers.startSingleTimer("coffee-finished", CoffeeFinished, finishCoffeeDuration)
+
+    case Waiter.CoffeeServed(otherCoffee) =>
+      log.info(s"Excpected my $favoriteCoffee but got $otherCoffee! ")
+      waiter ! Waiter.Complaint(favoriteCoffee)
 
     case CoffeeFinished if(coffeeCount > caffeineLimit) =>
       throw CaffeineException
