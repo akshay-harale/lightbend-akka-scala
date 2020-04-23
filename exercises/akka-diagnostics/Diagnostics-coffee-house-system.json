@@ -1,45 +1,45 @@
 {
-  "start-time" : "2020-04-18T11:25:53.921",
+  "start-time" : "2020-04-23T08:58:19.793",
   "akka-version" : "2.6.3",
   "akka-diagnostics-version" : "1.1.12",
-  "classpath" : "/tmp/sbt_fc6c5b79/job-8/target/49d7884b/exercises_2.13-1.3.0.jar:/tmp/sbt_fc6c5b79/target/d369dbd2/common_2.13-1.3.0.jar:/tmp/sbt_fc6c5b79/target/1418c956/scala-library-2.13.1.jar:/tmp/sbt_fc6c5b79/target/b650b9cd/akka-actor_2.13-2.6.3.jar:/tmp/sbt_fc6c5b79/target/a8b341fe/config-1.4.0.jar:/tmp/sbt_fc6c5b79/target/cecd75f8/scala-java8-compat_2.13-0.9.0.jar:/tmp/sbt_fc6c5b79/target/3801c01e/akka-slf4j_2.13-2.6.3.jar:/tmp/sbt_fc6c5b79/target/b5a4b6d1/slf4j-api-1.7.30.jar:/tmp/sbt_fc6c5b79/target/7c4f3c47/logback-classic-1.2.3.jar:/tmp/sbt_fc6c5b79/target/86434440/logback-core-1.2.3.jar:/tmp/sbt_fc6c5b79/target/1c591dfd/scala-parser-combinators_2.13-1.1.2.jar:/tmp/sbt_fc6c5b79/target/e70d360c/akka-diagnostics_2.13-1.1.12.jar:/tmp/sbt_fc6c5b79/target/6c6c702c/commons-lang3-3.5.jar:/tmp/sbt_fc6c5b79/target/7832979b/cinnamon-akka_2.13-2.13.1.jar:/tmp/sbt_fc6c5b79/target/5336dd59/cinnamon-java-2.13.1.jar:/tmp/sbt_fc6c5b79/target/40a2e2da/cinnamon-core-java-2.13.1.jar:/tmp/sbt_fc6c5b79/target/a65b97ee/cinnamon-common-2.13.1.jar:/tmp/sbt_fc6c5b79/target/8637290f/cinnamon-scala_2.13-2.13.1.jar:/tmp/sbt_fc6c5b79/target/4dbf8530/cinnamon-core_2.13-2.13.1.jar:/tmp/sbt_fc6c5b79/target/8fc82389/cinnamon-jvm-metrics-producer-2.13.1.jar:/tmp/sbt_fc6c5b79/target/6c8821a8/cinnamon-prometheus-2.13.1.jar:/tmp/sbt_fc6c5b79/target/8d4e28b6/simpleclient-0.8.0.jar:/tmp/sbt_fc6c5b79/target/6eb75521/HdrHistogram-2.1.12.jar:/tmp/sbt_fc6c5b79/target/7c0c78cc/cinnamon-prometheus-httpserver-2.13.1.jar:/tmp/sbt_fc6c5b79/target/92f1e166/simpleclient_httpserver-0.8.0.jar:/tmp/sbt_fc6c5b79/target/011ed6de/simpleclient_common-0.8.0.jar:/home/synerzip/.ivy2/cache/com.lightbend.cinnamon/cinnamon-agent/jars/cinnamon-agent-2.13.1.jar",
+  "classpath" : "/tmp/sbt_6f754b66/job-1/target/92a402db/exercises_2.13-1.3.0.jar:/tmp/sbt_6f754b66/target/67c6d00d/common_2.13-1.3.0.jar:/tmp/sbt_6f754b66/target/1418c956/scala-library-2.13.1.jar:/tmp/sbt_6f754b66/target/b650b9cd/akka-actor_2.13-2.6.3.jar:/tmp/sbt_6f754b66/target/a8b341fe/config-1.4.0.jar:/tmp/sbt_6f754b66/target/cecd75f8/scala-java8-compat_2.13-0.9.0.jar:/tmp/sbt_6f754b66/target/3801c01e/akka-slf4j_2.13-2.6.3.jar:/tmp/sbt_6f754b66/target/b5a4b6d1/slf4j-api-1.7.30.jar:/tmp/sbt_6f754b66/target/7c4f3c47/logback-classic-1.2.3.jar:/tmp/sbt_6f754b66/target/86434440/logback-core-1.2.3.jar:/tmp/sbt_6f754b66/target/1c591dfd/scala-parser-combinators_2.13-1.1.2.jar:/tmp/sbt_6f754b66/target/e70d360c/akka-diagnostics_2.13-1.1.12.jar:/tmp/sbt_6f754b66/target/6c6c702c/commons-lang3-3.5.jar:/tmp/sbt_6f754b66/target/7832979b/cinnamon-akka_2.13-2.13.1.jar:/tmp/sbt_6f754b66/target/5336dd59/cinnamon-java-2.13.1.jar:/tmp/sbt_6f754b66/target/40a2e2da/cinnamon-core-java-2.13.1.jar:/tmp/sbt_6f754b66/target/a65b97ee/cinnamon-common-2.13.1.jar:/tmp/sbt_6f754b66/target/8637290f/cinnamon-scala_2.13-2.13.1.jar:/tmp/sbt_6f754b66/target/4dbf8530/cinnamon-core_2.13-2.13.1.jar:/tmp/sbt_6f754b66/target/8fc82389/cinnamon-jvm-metrics-producer-2.13.1.jar:/tmp/sbt_6f754b66/target/6c8821a8/cinnamon-prometheus-2.13.1.jar:/tmp/sbt_6f754b66/target/8d4e28b6/simpleclient-0.8.0.jar:/tmp/sbt_6f754b66/target/6eb75521/HdrHistogram-2.1.12.jar:/tmp/sbt_6f754b66/target/7c0c78cc/cinnamon-prometheus-httpserver-2.13.1.jar:/tmp/sbt_6f754b66/target/92f1e166/simpleclient_httpserver-0.8.0.jar:/tmp/sbt_6f754b66/target/011ed6de/simpleclient_common-0.8.0.jar:/home/synerzip/.ivy2/cache/com.lightbend.cinnamon/cinnamon-agent/jars/cinnamon-agent-2.13.1.jar",
   "configuration-warnings" : [],
   "system-metrics" : {
     "heap-init" : 257949696,
     "heap-max" : 3663200256,
-    "heap-used" : 72675000,
-    "heap-committed" : 179306496,
+    "heap-used" : 24175840,
+    "heap-committed" : 190840832,
     "os-processors" : 4,
     "mem-pool-0" : {
       "name" : "Code Cache",
       "type" : "Non-heap memory",
       "init" : 2555904,
       "max" : 251658240,
-      "used" : 8275840,
-      "committed" : 8323072
+      "used" : 8491776,
+      "committed" : 8519680
     },
     "mem-pool-1" : {
       "name" : "Metaspace",
       "type" : "Non-heap memory",
       "init" : 0,
       "max" : -1,
-      "used" : 27921880,
-      "committed" : 29671424
+      "used" : 27590688,
+      "committed" : 29360128
     },
     "mem-pool-2" : {
       "name" : "Compressed Class Space",
       "type" : "Non-heap memory",
       "init" : 0,
       "max" : 1073741824,
-      "used" : 3678488,
-      "committed" : 3981312
+      "used" : 3568040,
+      "committed" : 3932160
     },
     "mem-pool-3" : {
       "name" : "PS Eden Space",
       "type" : "Heap memory",
       "init" : 65011712,
       "max" : 1352663040,
-      "used" : 65011712,
+      "used" : 3668768,
       "committed" : 65011712
     },
     "mem-pool-4" : {
@@ -47,7 +47,7 @@
       "type" : "Heap memory",
       "init" : 10485760,
       "max" : 10485760,
-      "used" : 0,
+      "used" : 10477944,
       "committed" : 10485760
     },
     "mem-pool-5" : {
@@ -55,8 +55,8 @@
       "type" : "Heap memory",
       "init" : 171966464,
       "max" : 2747269120,
-      "used" : 7663288,
-      "committed" : 103809024
+      "used" : 10253544,
+      "committed" : 115343360
     }
   },
   "configuration" : {
@@ -137,25 +137,25 @@
             "printerjob" : "sun.print.PSPrinterJob"
         },
         "class" : {
-            "path" : "/tmp/sbt_fc6c5b79/job-8/target/49d7884b/exercises_2.13-1.3.0.jar:/tmp/sbt_fc6c5b79/target/d369dbd2/common_2.13-1.3.0.jar:/tmp/sbt_fc6c5b79/target/1418c956/scala-library-2.13.1.jar:/tmp/sbt_fc6c5b79/target/b650b9cd/akka-actor_2.13-2.6.3.jar:/tmp/sbt_fc6c5b79/target/a8b341fe/config-1.4.0.jar:/tmp/sbt_fc6c5b79/target/cecd75f8/scala-java8-compat_2.13-0.9.0.jar:/tmp/sbt_fc6c5b79/target/3801c01e/akka-slf4j_2.13-2.6.3.jar:/tmp/sbt_fc6c5b79/target/b5a4b6d1/slf4j-api-1.7.30.jar:/tmp/sbt_fc6c5b79/target/7c4f3c47/logback-classic-1.2.3.jar:/tmp/sbt_fc6c5b79/target/86434440/logback-core-1.2.3.jar:/tmp/sbt_fc6c5b79/target/1c591dfd/scala-parser-combinators_2.13-1.1.2.jar:/tmp/sbt_fc6c5b79/target/e70d360c/akka-diagnostics_2.13-1.1.12.jar:/tmp/sbt_fc6c5b79/target/6c6c702c/commons-lang3-3.5.jar:/tmp/sbt_fc6c5b79/target/7832979b/cinnamon-akka_2.13-2.13.1.jar:/tmp/sbt_fc6c5b79/target/5336dd59/cinnamon-java-2.13.1.jar:/tmp/sbt_fc6c5b79/target/40a2e2da/cinnamon-core-java-2.13.1.jar:/tmp/sbt_fc6c5b79/target/a65b97ee/cinnamon-common-2.13.1.jar:/tmp/sbt_fc6c5b79/target/8637290f/cinnamon-scala_2.13-2.13.1.jar:/tmp/sbt_fc6c5b79/target/4dbf8530/cinnamon-core_2.13-2.13.1.jar:/tmp/sbt_fc6c5b79/target/8fc82389/cinnamon-jvm-metrics-producer-2.13.1.jar:/tmp/sbt_fc6c5b79/target/6c8821a8/cinnamon-prometheus-2.13.1.jar:/tmp/sbt_fc6c5b79/target/8d4e28b6/simpleclient-0.8.0.jar:/tmp/sbt_fc6c5b79/target/6eb75521/HdrHistogram-2.1.12.jar:/tmp/sbt_fc6c5b79/target/7c0c78cc/cinnamon-prometheus-httpserver-2.13.1.jar:/tmp/sbt_fc6c5b79/target/92f1e166/simpleclient_httpserver-0.8.0.jar:/tmp/sbt_fc6c5b79/target/011ed6de/simpleclient_common-0.8.0.jar:/home/synerzip/.ivy2/cache/com.lightbend.cinnamon/cinnamon-agent/jars/cinnamon-agent-2.13.1.jar",
+            "path" : "/tmp/sbt_6f754b66/job-1/target/92a402db/exercises_2.13-1.3.0.jar:/tmp/sbt_6f754b66/target/67c6d00d/common_2.13-1.3.0.jar:/tmp/sbt_6f754b66/target/1418c956/scala-library-2.13.1.jar:/tmp/sbt_6f754b66/target/b650b9cd/akka-actor_2.13-2.6.3.jar:/tmp/sbt_6f754b66/target/a8b341fe/config-1.4.0.jar:/tmp/sbt_6f754b66/target/cecd75f8/scala-java8-compat_2.13-0.9.0.jar:/tmp/sbt_6f754b66/target/3801c01e/akka-slf4j_2.13-2.6.3.jar:/tmp/sbt_6f754b66/target/b5a4b6d1/slf4j-api-1.7.30.jar:/tmp/sbt_6f754b66/target/7c4f3c47/logback-classic-1.2.3.jar:/tmp/sbt_6f754b66/target/86434440/logback-core-1.2.3.jar:/tmp/sbt_6f754b66/target/1c591dfd/scala-parser-combinators_2.13-1.1.2.jar:/tmp/sbt_6f754b66/target/e70d360c/akka-diagnostics_2.13-1.1.12.jar:/tmp/sbt_6f754b66/target/6c6c702c/commons-lang3-3.5.jar:/tmp/sbt_6f754b66/target/7832979b/cinnamon-akka_2.13-2.13.1.jar:/tmp/sbt_6f754b66/target/5336dd59/cinnamon-java-2.13.1.jar:/tmp/sbt_6f754b66/target/40a2e2da/cinnamon-core-java-2.13.1.jar:/tmp/sbt_6f754b66/target/a65b97ee/cinnamon-common-2.13.1.jar:/tmp/sbt_6f754b66/target/8637290f/cinnamon-scala_2.13-2.13.1.jar:/tmp/sbt_6f754b66/target/4dbf8530/cinnamon-core_2.13-2.13.1.jar:/tmp/sbt_6f754b66/target/8fc82389/cinnamon-jvm-metrics-producer-2.13.1.jar:/tmp/sbt_6f754b66/target/6c8821a8/cinnamon-prometheus-2.13.1.jar:/tmp/sbt_6f754b66/target/8d4e28b6/simpleclient-0.8.0.jar:/tmp/sbt_6f754b66/target/6eb75521/HdrHistogram-2.1.12.jar:/tmp/sbt_6f754b66/target/7c0c78cc/cinnamon-prometheus-httpserver-2.13.1.jar:/tmp/sbt_6f754b66/target/92f1e166/simpleclient_httpserver-0.8.0.jar:/tmp/sbt_6f754b66/target/011ed6de/simpleclient_common-0.8.0.jar:/home/synerzip/.ivy2/cache/com.lightbend.cinnamon/cinnamon-agent/jars/cinnamon-agent-2.13.1.jar",
             "version" : "52.0"
         },
         "endorsed" : {
-            "dirs" : "/home/synerzip/softwares/jdk1.8.0_191/jre/lib/endorsed"
+            "dirs" : "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"
         },
         "ext" : {
-            "dirs" : "/home/synerzip/softwares/jdk1.8.0_191/jre/lib/ext:/usr/java/packages/lib/ext"
+            "dirs" : "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"
         },
-        "home" : "/home/synerzip/softwares/jdk1.8.0_191/jre",
+        "home" : "/usr/lib/jvm/java-8-openjdk-amd64/jre",
         "io" : {
             "tmpdir" : "/tmp"
         },
         "library" : {
-            "path" : "/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"
+            "path" : "/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"
         },
         "runtime" : {
-            "name" : "Java(TM) SE Runtime Environment",
-            "version" : "1.8.0_191-b12"
+            "name" : "OpenJDK Runtime Environment",
+            "version" : "1.8.0_242-8u242-b08-0ubuntu3~16.04-b08"
         },
         "specification" : {
             "name" : "Java Platform API Specification",
@@ -167,17 +167,17 @@
                 "bug" : "http://bugreport.sun.com/bugreport/"
             }
         },
-        "version" : "1.8.0_191",
+        "version" : "1.8.0_242",
         "vm" : {
             "info" : "mixed mode",
-            "name" : "Java HotSpot(TM) 64-Bit Server VM",
+            "name" : "OpenJDK 64-Bit Server VM",
             "specification" : {
                 "name" : "Java Virtual Machine Specification",
                 "vendor" : "Oracle Corporation",
                 "version" : "1.8"
             },
-            "vendor" : "Oracle Corporation",
-            "version" : "25.191-b12"
+            "vendor" : "Private Build",
+            "version" : "25.242-b08"
         }
     },
     "line" : {
@@ -186,7 +186,7 @@
     "os" : {
         "arch" : "amd64",
         "name" : "Linux",
-        "version" : "4.15.0-91-generic"
+        "version" : "4.15.0-96-generic"
     },
     "path" : {
         "separator" : ":"
@@ -199,10 +199,10 @@
         },
         "boot" : {
             "class" : {
-                "path" : "/home/synerzip/softwares/jdk1.8.0_191/jre/lib/resources.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/rt.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/sunrsasign.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/jsse.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/jce.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/charsets.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/lib/jfr.jar:/home/synerzip/softwares/jdk1.8.0_191/jre/classes"
+                "path" : "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"
             },
             "library" : {
-                "path" : "/home/synerzip/softwares/jdk1.8.0_191/jre/lib/amd64"
+                "path" : "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"
             }
         },
         "cpu" : {

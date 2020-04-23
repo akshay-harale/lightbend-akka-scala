@@ -28,11 +28,14 @@ object CoffeeHouse {
 class CoffeeHouse(caffeineLimit: Int) extends Actor with ActorLogging {
 
   import CoffeeHouse._
-
+  import Waiter._
 
   override def supervisorStrategy: SupervisorStrategy = {
     val decider : SupervisorStrategy.Decider = {
       case Guest.CaffeineException => SupervisorStrategy.Stop
+      case Waiter.FrustratedException(coffee,guest) =>
+        barista.forward(Barista.PrepareCoffee(coffee, guest))
+        SupervisorStrategy.Restart
     }
     OneForOneStrategy()(decider.orElse(super.supervisorStrategy.decider))
   }

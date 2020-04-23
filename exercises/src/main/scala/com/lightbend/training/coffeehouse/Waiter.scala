@@ -17,7 +17,7 @@ object Waiter {
 
   case class Complaint(coffee: Coffee)
 
-  case object FrustratedException extends IllegalStateException("Too many complaints")
+  case class FrustratedException(coffee: Coffee,guest: ActorRef) extends IllegalStateException("Too many complaints")
 
   def props(coffeeHouse: ActorRef, barista: ActorRef, maxComplaintCount:Int): Props = Props(new Waiter(coffeeHouse,barista,maxComplaintCount))
 }
@@ -35,7 +35,7 @@ class Waiter(coffeeHouse: ActorRef,barista: ActorRef, maxComplaintCount:Int) ext
       guest ! CoffeeServed(coffee)
     case Complaint(coffee) if complainntCount >= maxComplaintCount =>
       log.info(s"throwing exception c-count:$complainntCount and mc-count:$maxComplaintCount")
-      throw FrustratedException
+      throw FrustratedException(coffee, sender())
     case Complaint(coffee) =>
       complainntCount += 1
       barista ! Barista.PrepareCoffee(coffee, sender())
