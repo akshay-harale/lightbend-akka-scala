@@ -4,13 +4,20 @@
 
 package com.lightbend.training.coffeehouse
 
+import java.util.concurrent.TimeUnit
+
+import akka.pattern.ask
 import akka.actor.{Actor, ActorRef, ActorSystem, Props}
 import akka.event.Logging
+import akka.util.Timeout
 
 import scala.annotation.tailrec
 import scala.concurrent.Await
 import scala.concurrent.duration.Duration
 import scala.io.StdIn
+import scala.util.{Failure, Success}
+
+import scala.concurrent.duration._
 
 object CoffeeHouseApp {
 
@@ -22,7 +29,9 @@ object CoffeeHouseApp {
     val name = opts.getOrElse("name", "coffee-house")
 
     val system = ActorSystem(s"$name-system")
-    val coffeeHouseApp = new CoffeeHouseApp(system)
+    implicit val statusTimeout = system.settings.config.getDuration("coffee-house.status-timeout",
+      TimeUnit.MILLISECONDS).millis
+    val coffeeHouseApp = new CoffeeHouseApp(system)(statusTimeout)
     coffeeHouseApp.run()
   }
 
@@ -34,8 +43,9 @@ object CoffeeHouseApp {
       System.setProperty(key substring 2, value)
 }
 
-class CoffeeHouseApp(system: ActorSystem) extends Terminal {
+class CoffeeHouseApp(system: ActorSystem)(implicit statusTimeout:Timeout) extends Terminal {
 
+  import system.dispatcher
   private val log = Logging(system, getClass.getName)
 
   private val caffeineLimit = system.settings.config.getInt("coffee-house.caffeine-limit")
@@ -76,6 +86,12 @@ class CoffeeHouseApp(system: ActorSystem) extends Terminal {
     })
   }
 
-  protected def status(): Unit =
-    ()
+  protected def status(): Unit = {
+
+    (coffeeHouse ? CoffeeHouse.GetStatus).mapTo[CoffeeHouse.Status]
+      .onComplete {
+        case Success(status) => log.info(s"Status: guest count = ${status.guestCount}")
+        case Failure(error) => log.error(error,"Can't get status")
+      }
+  }
 }

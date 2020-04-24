@@ -20,10 +20,9 @@ object CoffeeHouse {
 
   case class ApproveCoffee(coffee: Coffee, guest: ActorRef)
 
-
+  case object GetStatus
+  case class Status(guestCount:Int)
   def props(caffeineLimit: Int): Props = Props(new CoffeeHouse(caffeineLimit))
-
-
 }
 
 class CoffeeHouse(caffeineLimit: Int) extends Actor with ActorLogging {
@@ -90,6 +89,9 @@ class CoffeeHouse(caffeineLimit: Int) extends Actor with ActorLogging {
     case Terminated(guest) =>
       log.info(s"Thanks $guest for being our guest")
       guestBook -= guest
+
+    case GetStatus =>
+      sender() ! Status(guestBook.size)
 
   }
 }
